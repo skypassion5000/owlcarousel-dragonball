@@ -101,7 +101,7 @@
 }
 .logo__inner{
 	position: relative;
-	padding-bottom: 45%;
+	padding-bottom: calc( 100% * 210 / 474 );
 }
 .logo__image{
 	position: absolute;
