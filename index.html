@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>DragonBall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- plugins -->
+    <link rel="stylesheet" href="css/plugins/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/plugins/fancybox/jquery.fancybox.min.css">
+    <!-- <link rel="stylesheet" href="css/plugins/owl-carousel/owl.theme.default.css"> -->
+    <!-- custom -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Start jumbotron -->
+        <div class="jumbotron owl-carousel owl-theme">
+            <div class="jumbotron__item">
+                <a href="images/dragonball/dragon01.jpg" data-fancybox="gallery">
+                    <div class="image img-position-center" style="background-image: url('images/dragonball/dragon01.jpg')"></div>
+                </a>                
+            </div>
+            <div class="jumbotron__item">
+                <a href="images/dragonball/dragon02.jpg" data-fancybox="gallery">
+                    <div class="image img-position-center" style="background-image: url('images/dragonball/dragon02.jpg')"></div>
+                </a>                
+            </div>
+            <div class="jumbotron__item">
+                <a href="images/dragonball/dragon03.jpg" data-fancybox="gallery">
+                    <div class="image img-position-center" style="background-image: url('images/dragonball/dragon03.jpg')"></div>
+                </a>                
+            </div>
+            <div class="jumbotron__item">
+                <a href="images/dragonball/dragon04.jpg" data-fancybox="gallery">
+                    <div class="image img-position-center" style="background-image: url('images/dragonball/dragon04.jpg')"></div>
+                </a>                
+            </div>
+            <div class="jumbotron__item">
+                <a href="images/dragonball/dragon05.jpg" data-fancybox="gallery">
+                    <div class="image img-position-center" style="background-image: url('images/dragonball/dragon05.jpg')"></div>
+                </a>                
+            </div>
+            <div class="jumbotron__item">
+                <a href="images/dragonball/dragon06.jpg" data-fancybox="gallery">
+                    <div class="image img-position-center" style="background-image: url('images/dragonball/dragon06.jpg')"></div>
+                </a>                
+            </div>
+            <div class="jumbotron__item">
+                <a href="images/dragonball/dragon07.jpg" data-fancybox="gallery">
+                    <div class="image img-position-center" style="background-image: url('images/dragonball/dragon07.jpg')"></div>
+                </a>                
+            </div>
+            <div class="jumbotron__item">
+                <a href="images/dragonball/dragon08.jpg" data-fancybox="gallery">
+                    <div class="image img-position-left" style="background-image: url('images/dragonball/dragon08.jpg')"></div>
+                </a>                
+            </div>
+            <div class="jumbotron__item">
+                <a href="images/dragonball/dragon09.jpg" data-fancybox="gallery">
+                    <div class="image img-position-center" style="background-image: url('images/dragonball/dragon09.jpg')"></div>
+                </a>                
+            </div>
+            <div class="jumbotron__item">
+                <a href="images/dragonball/dragon10.jpg" data-fancybox="gallery">
+                    <div class="image img-position-left" style="background-image: url('images/dragonball/dragon10.jpg')"></div>
+                </a>                
+            </div>
+        </div>
+        <!-- End jumbotron structure -->
+
+        <!-- Start LOGO -->
+        <div class="logo__container">
+            <div class="logo__inner">
+                <div class="logo__image"></div>
+            </div>
+        </div>           
+        <!-- <div class="title-img"></div>     -->
+        <!-- End LOGO -->
+    </div>
+
+    <!-- javascript -->
+    <script src="js/plugins/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        // owlcarousel plugins init
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                nav:true,            
+                navText: [],
+                autoplay: true,
+                autoplaySpeed: 1000,
+                smartSpaeed: 500,
+                // lazyLoad : true,
+                // items: 3,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
+        });
+
+        // // fancybox plugins init
+        // $().fancybox({
+        //     selector : '.owl-item:not(.cloned) a',
+        //     backFocus : false,
+        //     hash   : false,
+        //     thumbs : {
+        //         autoStart : true
+        //     },
+        //     buttons : [
+        //         'zoom',
+        //         'download',
+        //         'close'
+        //     ]
+        // });
+        // // Attach custom click event on cloned elements, 
+        // // trigger click event on corresponding link.
+        // // ================================================
+        // $(document).on('click', '.owl-item.cloned a', function(e) {
+        //     var $slides = $(this)
+        //         .parent()
+        //         .siblings('.owl-item:not(.cloned)');
+
+        //     $slides
+        //         .eq( ( $(this).attr("data-index") || 0) % $slides.length )
+        //         .find('a')
+        //         .trigger("click.fb-start", { $trigger: $(this) });
+
+        //     return false;
+        // });
+    </script>
+</body>
+</html>
